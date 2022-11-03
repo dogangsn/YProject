@@ -1,0 +1,15 @@
+D:\Dogan\Example\Agackakan\Entities\bin\Debug\net5.0\YProject.Entities.deps.json
+D:\Dogan\Example\Agackakan\Entities\bin\Debug\net5.0\YProject.Entities.dll
+D:\Dogan\Example\Agackakan\Entities\bin\Debug\net5.0\YProject.Entities.pdb
+D:\Dogan\Example\Agackakan\Entities\bin\Debug\net5.0\YProject.Helpers.dll
+D:\Dogan\Example\Agackakan\Entities\bin\Debug\net5.0\YProject.Helpers.pdb
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.csproj.AssemblyReference.cache
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.AssemblyInfoInputs.cache
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.AssemblyInfo.cs
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.csproj.CoreCompileInputs.cache
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.csproj.CopyComplete
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.dll
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\refint\YProject.Entities.dll
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\YProject.Entities.pdb
+D:\Dogan\Example\Agackakan\Entities\obj\Debug\net5.0\ref\YProject.Entities.dll

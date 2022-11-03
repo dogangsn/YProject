@@ -1,0 +1,26 @@
+﻿*, *:focus, *:hover {
+   outline: none !important;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+   padding: 0.35rem .5rem;
+   font-size: .875rem;
+   line-height: .5;
+   border-radius: .2rem;
+}
+
+.file-upload-indicator {
+   display: none !important;
+}
+
+.stockInBg {
+   background: #93FF93;
+}
+
+.stockOutBg {
+   background: #FFB99B;
+}
+
+.stockTotalBg {
+   background: #FFFFB7;
+}

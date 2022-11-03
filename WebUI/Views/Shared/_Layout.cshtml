@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ağaçkakan Hobi Atölyesi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="~/themes/favicon.ico">
+
+    <!-- CSS============================================ -->
+    <link rel="stylesheet" href="~/themes/client/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="~/themes/client/css/vendor/linearicons.min.css">
+    <link rel="stylesheet" href="~/themes/client/css/vendor/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/themes/client/css/plugins/animation.min.css">
+    <link rel="stylesheet" href="~/themes/client/css/plugins/slick.min.css">
+    <link rel="stylesheet" href="~/themes/client/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="~/themes/client/css/plugins/easyzoom.css">
+    <link rel="stylesheet" href="~/themes/client/css/style.css">
+    <link href="~/themes/admin/css/fontawesome/styles.min.css" rel="stylesheet" />
+
+    @RenderSection("css", required: false)
+</head>
+
+<body class="box-home">
+
+
+
+    <div class="page-box">
+        @*====================  header area ====================*@
+        <div class="header-area header-area--default bg-white">
+
+            <!-- Header Bottom Wrap Start -->
+            <header class="header-area   header-sticky">
+                <div class="container-fluid container-fluid--cp-100">
+                    <div class="row align-items-center pt-3 pb-3">
+
+                        <div class="col-lg-3 col-lg-3 col-6">
+                            <div class="header-right-items content__hidden d-none d-md-block">
+                                <a href="/"><img src="~/themes/client/logo-client.png" style="width:50% !important"></a>
+                            </div>
+                            <div class="logo__hidden text-left">
+                                <a href="/"><img src="~/themes/client/logo-client.png" style="width:50% !important"></a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6  d-none d-lg-block">
+                            <!-- navigation menu -->
+                            <div class="header__navigation d-none d-lg-block">
+                                <nav class="navigation-menu">
+                                    <ul class="justify-content-center">
+                                        <li class="has-children">
+                                            <a href="/"><span>Anasayfa</span></a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="@Url.RouteUrl("urunler")"><span>Ürünler</span></a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="#"><span>Hakkımızda</span></a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="/home/contact"><span>İletişim</span></a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="/admin/login/index" target="_blank">Giriş</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-lg-3 col-6">
+                            <div class="header-right-side text-right">
+                                <div class="header-right-items ">
+                                    <a href="#" class="mobile-navigation-icon" id="mobile-menu-trigger">
+                                        <i class="icon-menu"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header Bottom Wrap End -->
+
+        </div>
+        <!--====================  End of header area  ====================-->
+
+        <div id="main-wrapper">
+            <div class="site-wrapper-reveal">
+                @RenderBody()
+            </div>
+
+            @*====================  footer area ====================*@
+            <div class="footer-area-wrapper bg-white">
+                <div class="footer-copyright-area border-top section-space--ptb_30">
+                    <div class="container-fluid container-fluid--cp-100">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 order-md-1 order-2">
+                                <span class="copyright-text text-center text-md-left">&copy; @DateTime.Now.Year Özdemir Hobi Dünyası. <a href="https://www.linkedin.com/in/emreozdemir07/" target="_blank">Tüm Hakları Saklıdır.</a></span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 order-md-2 order-1">
+                                <div class="footer-bottom-social">
+                                    <ul class="list footer-social-networks ">
+                                        <li class="item">
+                                            <a href="https://www.instagram.com/agackakanhobiatolyesi07/" target="_blank" aria-label="Instagram">
+                                                <i class="fab fa-instagram  fa-2x"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*====================  mobile menu overlay ====================*@
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__inner">
+            <div class="mobile-menu-close-box text-left">
+                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"> <i class="icon-cross2"></i></span>
+            </div>
+            <div class="mobile-menu-overlay__body">
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li class="has-children">
+                            <a href="/"><span>Anasayfa</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="@Url.RouteUrl("urunler")"><span>Ürünler</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#"><span>Hakkımızda</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="/home/contact"><span>İletişim</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="/admin/login/index" target="_blank">Giriş</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-social-share section-space--mt_60">
+                    <ul class="social-share">
+                        <li>
+                            <a href="https://www.instagram.com/agackakanhobiatolyesi07/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram  fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*====================  scroll top ====================*@
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top icon-arrow-up"></i>
+        <i class="arrow-bottom icon-arrow-up"></i>
+    </a>
+
+
+    <script src="~/themes/client/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="~/themes/client/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="~/themes/client/js/vendor/bootstrap.min.js"></script>
+    <script src="~/themes/client/js/plugins/fullpage.min.js"></script>
+    <script src="~/themes/client/js/plugins/slick.min.js"></script>
+    <script src="~/themes/client/js/plugins/countdown.min.js"></script>
+    <script src="~/themes/client/js/plugins/magnific-popup.js"></script>
+    <script src="~/themes/client/js/plugins/easyzoom.js"></script>
+    <script src="~/themes/client/js/plugins/images-loaded.min.js"></script>
+    <script src="~/themes/client/js/plugins/isotope.min.js"></script>
+    <script src="~/themes/client/js/plugins/YTplayer.js"></script>
+    <script src="~/themes/client/js/plugins/jquery.instagramfeed.min.js"></script>
+    <script src="~/themes/client/js/plugins/ajax.mail.js"></script>
+    <script src="~/themes/client/js/plugins/wow.min.js"></script>
+    <script src="~/themes/client/js/plugins/plugins.min.js"></script>
+    <script src="~/themes/client/js/main.js"></script>
+
+    @RenderSection("js", required: false)
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+﻿@model ProductsDto
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+<input type="hidden" value="@Convert.ToInt32(Url.ActionContext.RouteData.Values["id"])" id="txtId" />
+<div class="breadcrumb-area" style="background-color:#ffffff !important;padding-top: 5px;padding-bottom: 5px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row breadcrumb_box  align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6 text-center text-sm-left">
+                        <h2 class="breadcrumb-title" id="title"></h2>
+                    </div>
+                    <div class="col-lg-6  col-md-6 col-sm-6">
+                        <ul class="breadcrumb-list text-center text-sm-right">
+                            <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                            <li class="breadcrumb-item active" >Ürünler</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+
+
+<div id="main-wrapper">
+    <div class="site-wrapper-reveal border-bottom">
+        <div class="product-wrapper section-space--ptb_60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        @*<div class="shop-widget widget-size">
+                            <div class="variable-color-selector variations">
+                                <h5 class="mb-20">Kategori</h5>
+                                <select id="drpCategory">
+                                    <option value="0">Tüm Ürünler</option>
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <option value="@item.CategoryId" class="attached enabled">@item.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>*@
+                        <div class="shop-widget widget-shop-categories">
+                            <div class="product-filter">
+                                <h6 class="mb-20">Kategori</h6>
+                                <ul class="widget-nav-list">
+                                    <li><a href="/products/products/" id="0">Tüm Ürünler</a></li>
+                                    @foreach (var item in Model.Categories)
+                                    { 
+                                        <li><a href="/products/products/@item.CategoryId" id="@item.CategoryId">@item.Name</a></li>
+                                    
+                                    } 
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="row">
+                            @foreach (var item in Model.Products)
+                            {
+                                <div class="col-lg-3 col-4 col-md-4 rounded">
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="/products/productdetail/@item.ProductId" class="product-thumbnail">
+                                                <img src="@item.Image" class="img-fluid" alt="Product Images">
+                                            </a>
+                                        </div>
+
+                                        <div class="product-content">
+                                            <h6 class="prodect-title" style="min-height:66px"><a href="/products/productdetail/@item.ProductId">@item.Name</a></h6>
+                                            <div class="prodect-price">
+                                                @if (item.Price1 != 0 && item.Price2 != 0)
+                                                {
+                                                    <h6 style="color:#E74C3C"><del> @item.Price1 ₺ </del></h6>
+                                                    <h4> @item.Price2 ₺ </h4>
+                                                }
+                                                else
+                                                {
+                                                    <h4> @item.Price2 ₺ </h4>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section js{
+    <script>
+
+        $(function () {
+            var id = parseInt($("#txtId").val());
+
+            var li = document.getElementById(id);
+            $(li).css("color", "#dcb14a");
+
+            var text = li.innerText;
+
+            $('#title').text(text);
+            //if (id === 0) {
+               
+            //}
+            //$('#drpCategory').val(id);
+        });
+        //$("#drpCategory").change(function () {
+        //    var id = $('#drpCategory option:selected').val();
+        //    if (id === 0) {
+        //        window.location.href = "/products/products/";
+        //    } else {
+        //        window.location.href = "/products/products/" + id;
+        //    }
+        //}); 
+    </script>
+}

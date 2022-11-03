@@ -1,0 +1,17 @@
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.DataAccess.deps.json
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.DataAccess.dll
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.DataAccess.pdb
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.Entities.dll
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.Helpers.dll
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.Entities.pdb
+D:\Dogan\Example\Agackakan\DataAccess\bin\Debug\net5.0\YProject.Helpers.pdb
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.csproj.AssemblyReference.cache
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.AssemblyInfoInputs.cache
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.AssemblyInfo.cs
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.csproj.CoreCompileInputs.cache
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.csproj.CopyComplete
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.dll
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\refint\YProject.DataAccess.dll
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\YProject.DataAccess.pdb
+D:\Dogan\Example\Agackakan\DataAccess\obj\Debug\net5.0\ref\YProject.DataAccess.dll

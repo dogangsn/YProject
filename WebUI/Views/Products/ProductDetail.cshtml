@@ -1,0 +1,175 @@
+﻿@model ProductDetailDto
+@{
+    ViewData["Title"] = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section css{
+    <link href="~/themes/client/lightBox/css/lightbox.css" rel="stylesheet" />
+<style>
+    .lb-details {
+        display: none;
+    }
+</style>
+}
+<hr />
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area" style="background-color:#ffffff !important;padding-top: 5px;padding-bottom: 5px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row breadcrumb_box  align-items-center">
+                    <div class="col-lg-8 col-md-8 col-sm-8 text-center text-sm-left">
+                        <h3 class="breadcrumb-title">@Model.ProductModel.Name</h3>
+                    </div>
+                    <div class="col-lg-4  col-md-4 col-sm-4">
+                        <!-- breadcrumb-list start -->
+                        <ul class="breadcrumb-list text-center text-sm-right">
+                            <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                            <li class="breadcrumb-item active">@Model.CategoryModel.Name</li>
+                        </ul>
+                        <!-- breadcrumb-list end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-area end -->
+<hr />
+
+
+
+
+
+
+<div id="main-wrapper">
+    <div class="site-wrapper-reveal">
+
+        <div class="single-product-wrap section-space--pt_60 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12">
+
+                        <div class="product-details-left">
+                            <div class="product-details-images-2 text-center">
+                                @foreach (var item in Model.ProductImagesModel)
+                                {
+                                    <a class="example-image-link rounded" href="@item.ImagePath" style="width:100%" data-lightbox="example-1">
+                                        <img class="example-image rounded" src="@item.ImagePath" style="width: 100%" />
+                                    </a>
+                                }
+                            </div>
+                            <div class="product-details-thumbs-2 text-center">
+                                @foreach (var item2 in Model.ProductImagesModel)
+                                {
+                                    <img class="example-image rounded" style="height:100px; width:100px" src="@item2.ImagePath" />
+                                }
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="product-details-content">
+
+                            <h4 class="font-weight--reguler mb-10">@Model.ProductModel.Name</h4>
+                            <div class="prodect-price">
+                                @if (Model.ProductModel.Price1 != 0 && Model.ProductModel.Price2 != 0)
+                                {
+                                    <h5 style="color:#E74C3C"><del> @Model.ProductModel.Price1 ₺ </del></h5>
+                                    <h2> @Model.ProductModel.Price2 ₺ </h2>
+                                }
+                                else
+                                {
+                                    <h2> @Model.ProductModel.Price2 ₺ </h2>
+
+                                }
+                            </div>
+
+                            <div class="mt-30 ">
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=905376673492&text=Merhaba '@Model.ProductModel.ProductId' numaralı '@Model.ProductModel.Name' isimli ürünü satın almak istiyorum." class="btn--lg font-weight--reguler text-white rounded text-right" style=" background: #25d366;">
+                                    <i class="fab fa-whatsapp mr-3 fa-2x"></i>Satın Al
+                                </a>
+                            </div>
+
+                            <div class="product_meta mt-30">
+                                <div class="sku_wrapper item_meta">
+                                    <span class="label"> Barkod : </span>
+                                    <span class="sku">@Model.ProductModel.ProductId</span>
+                                </div>
+                                <div class="posted_in item_meta">
+                                    <span class="label">Kategori: </span><a href="/products/products/@Model.ProductModel.CategoryId">@Model.CategoryModel.Name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="product_details_tab_content tab-content mt-30">
+                            <!-- Start Single Content -->
+                            <div class="product_tab_content tab-pane active" id="description" role="tabpanel">
+                                <div class="product_description_wrap">
+                                    <div class="product-details-wrap">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-12 order-md-1 order-2 mb-5">
+                                                <div class="details mt-30">
+                                                    <h3 class="mb-10">Açıklama</h3>
+                                                    <p>@Model.ProductModel.Description</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-products section-space--ptb_90">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-left">
+                                <h3>Benzer Ürünler</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row product-slider-active">
+                        @foreach (var item in Model.RelatedProducts)
+                        {
+                            <div class="col-lg-12">
+                                <!-- Single Product Item Start -->
+                                <div class="single-product-item text-center">
+                                    <div class="products-images">
+                                        <a href="/products/productdetail/@item.ProductId" class="product-thumbnail" style="text-align: -webkit-center;">
+                                            <img src="@item.Image" style="height:300px !important; width:300px !important;" class="img-fluid" alt="Product Images">
+                                        </a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h6 class="prodect-title"><a href="product-details.html">@item.Name</a></h6>
+                                        <div class="prodect-price">
+                                            @if (item.Price1 != 0 && item.Price2 != 0)
+                                            {
+                                                <h6 style="color:#E74C3C"><del> @item.Price1 ₺ </del></h6>
+                                                <h5> @item.Price2 ₺ </h5>
+                                            }
+                                            else
+                                            {
+                                                <h5> @item.Price2 ₺ </h5>
+
+                                            }
+                                        </div>
+                                    </div>
+                                </div><!-- Single Product Item End -->
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section js{
+    <script src="~/themes/client/lightBox/js/lightbox.js"></script>
+}

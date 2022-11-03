@@ -1,0 +1,12 @@
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\bin\Debug\net5.0\DataTransferObjects.deps.json
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\bin\Debug\net5.0\DataTransferObjects.dll
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\bin\Debug\net5.0\ref\DataTransferObjects.dll
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\bin\Debug\net5.0\DataTransferObjects.pdb
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.csprojAssemblyReference.cache
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.AssemblyInfoInputs.cache
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.AssemblyInfo.cs
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.csproj.CoreCompileInputs.cache
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.dll
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\ref\DataTransferObjects.dll
+C:\Users\emre.ozdemir\source\repos\Agackakan\DataTransferObjects\obj\Debug\net5.0\DataTransferObjects.pdb

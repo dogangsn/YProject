@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "İletişim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css{
+
+    <style>
+        .single-contact-info-item {
+            margin-top: 0px !important
+        }
+    </style>
+}
+
+<hr />
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area" style="background-color:#ffffff !important;padding-top: 5px;padding-bottom: 5px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row breadcrumb_box  align-items-center">
+                    <div class="col-lg-8 col-md-8 col-sm-8 text-center text-sm-left">
+                        <h3 class="breadcrumb-title">İletişim</h3>
+                    </div>
+                    <div class="col-lg-4  col-md-4 col-sm-4">
+                        <!-- breadcrumb-list start -->
+                        <ul class="breadcrumb-list text-center text-sm-right">
+                            <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                            <li class="breadcrumb-item active">İletişim</li>
+                        </ul>
+                        <!-- breadcrumb-list end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb-area end -->
+<hr />
+
+
+
+<div id="main-wrapper">
+    <div class="site-wrapper-reveal">
+        <div class="single-product-wrap section-space--pt_60 section-space--pb_60 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-contact-info-item">
+                            <div class="icon">
+                                <i class="icon-telephone"></i>
+                            </div>
+                            <div class="iconbox-desc">
+                                <h6 class="mb-10">Telefon</h6>
+                                <a href="tel:05376673492">0 (537) 667 34 92</a><br />
+                                <a href="tel:05383538541">0 (538) 353 85 41</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-contact-info-item">
+                            <div class="icon">
+                                <i class="icon-envelope-open"></i>
+                            </div>
+                            <div class="iconbox-desc">
+                                <h6 class="mb-10">Mail</h6>
+                                <a href="mailto:emreozdemir007@gmail.com">emreozdemir007@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-contact-info-item">
+                            <div class="icon">
+                                <i class="icon-map-marker"></i>
+                            </div>
+                            <div class="iconbox-desc">
+                                <h6 class="mb-10">Adres</h6>
+                                <p>1482 Sokak Varsak Karşıyaka<br>Kepez/ANTALYA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin-top:60px" />
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-form-wrap  section-space--mt_30">
+                            <h5 class="mb-10">İletişim</h5>
+                            <div id="contact-form" class="mt-30">
+                                <div class="contact-input">
+                                    <div class="contact-inner">
+                                        <input name="con_name" type="text" placeholder="Ad *">
+                                    </div>
+                                    <div class="contact-inner">
+                                        <input name="con_email" type="email" placeholder="Email *">
+                                    </div>
+                                </div>
+                                <div class="contact-inner">
+                                    <input name="con_subject" type="text" placeholder="Konu *">
+                                </div>
+                                <div class="contact-inner contact-message">
+                                    <textarea name="con_message" placeholder="Detay *"></textarea>
+                                </div>
+                                <div class="submit-btn mt-20">
+                                    <button class="btn btn--black btn--md" type="submit">Gönder</button>
+                                    <p class="form-messege"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

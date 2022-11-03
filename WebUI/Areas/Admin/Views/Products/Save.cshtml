@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewData["Title"] = "Ürün Yönetimi";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section css{
+    <link href="~/themes/admin/lib/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet" />
+    <style>
+        i.fas.fa-plus-circle.text-warning {
+            display: none;
+        }
+
+        i.fas.fa-trash-alt {
+            display: none;
+        }
+
+        .file-footer-caption {
+            display: none !important;
+        }
+    </style>
+}
+
+
+<input type="hidden" value="@Convert.ToInt32(Url.ActionContext.RouteData.Values["id"])" id="txtId" />
+<div class="page-header page-header-light">
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a href="/admin/admin/index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Anasayfa</a>
+                <span class="breadcrumb-item active">Ürün Yönetimi</span>
+            </div>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+
+                <div class="card-body">
+                    <div class="card-body m-2">
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Ürün Adı</label>
+                            <div class="col-12 col-lg-10">
+                                <input type="text" id="txtProductName" maxlength="100" placeholder="Ürün Adı Giriniz" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Kategori</label>
+                            <div class="col-12 col-lg-10">
+                                <select class="form-control select2" id="drpCategoryId">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Renk</label>
+                            <div class="col-12 col-lg-10">
+                                <select class="form-control select2" id="drpColorId">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Açıklama</label>
+                            <div class="col-12 col-lg-10">
+                                <textarea id="txtDescription" placeholder="Açıklama Giriniz" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">İlk Fiyat</label>
+                            <div class="col-12 col-lg-10">
+                                <input type="text" id="txtPrice1" class="form-control price" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Son Fiyat</label>
+                            <div class="col-12 col-lg-10">
+                                <input type="text" id="txtPrice2" class="form-control price" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Barkod</label>
+                            <div class="col-12 col-lg-8">
+                                <input type="text" id="txtBarcode" class="form-control barcode" maxlength="20" />
+                            </div>
+                            <div class="col-12 col-lg-2">
+                                <button class="btn btn-success btn-sm" id="btnCreateBarcode">
+                                    <i class="fa fa-save"></i>
+                                    Barkod Üret
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Stok</label>
+                            <div class="col-12 col-lg-10">
+                                <input type="text" id="txtStock" class="form-control stock" maxlength="2" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Sıra</label>
+                            <div class="col-12 col-lg-10">
+                                <input type="text" id="txtOrderNumber" class="form-control stock" maxlength="2" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Durum</label>
+                            <div class="col-12 col-lg-10">
+                                <select class="form-control select2" id="drpIsActive">
+                                    <option value="true">Aktif</option>
+                                    <option value="false">Pasif</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-12 col-lg-2">Anasayfada Göster</label>
+                            <div class="col-12 col-lg-10">
+                                <select class="form-control select2" id="drpShowHomePage">
+                                    <option value="false">Gösterme</option>
+                                    <option value="true">Göster</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="card-body mt-2">
+                                <div class="form-group row">
+                                    <div class="col-12 col-lg-12">
+                                        @{
+                                            if (Convert.ToInt32(Url.ActionContext.RouteData.Values["id"]) != 0)
+                                            {
+                                                <input id="fuImages2" name="fuImages2[]" type="file" multiple data-browse-on-zone-click="true">
+                                            }
+                                            else
+                                            {
+                                                <input id="fuImages" name="fuImages[]" type="file" multiple data-browse-on-zone-click="true">
+
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer text-right">
+                    <a href="/admin/products/index" class="btn bg-slate btn-sm">
+                        <i class="fas fa-arrow-circle-left"></i>
+                        Listeye Dön
+                    </a>
+                    <button class="btn btn-success btn-sm" id="btnSave">
+                        <i class="fa fa-save"></i>
+                        Kaydet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section js{
+    <script src="~/themes/admin/lib/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="~/themes/admin/lib/bootstrap-fileinput/themes/fas/theme.min.js"></script>
+    <script src="~/themes/admin/lib/bootstrap-fileinput/js/locales/tr.js"></script>
+    <script src="~/themes/admin/lib/bootstrap-fileinput/themes/fas/theme.min.js"></script>
+    <script src="~/themes/admin/lib/bootstrap-fileinput/js/plugins/piexif.min.js"></script>
+    <script src="~/themes/admin/lib/bootstrap-fileinput/js/plugins/sortable.min.js"></script>
+    <script src="~/views/admin/products/save.js"></script>
+}

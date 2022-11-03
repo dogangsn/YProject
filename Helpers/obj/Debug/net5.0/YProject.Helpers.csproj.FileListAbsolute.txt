@@ -1,0 +1,12 @@
+D:\Dogan\Example\Agackakan\Helpers\bin\Debug\net5.0\YProject.Helpers.deps.json
+D:\Dogan\Example\Agackakan\Helpers\bin\Debug\net5.0\YProject.Helpers.dll
+D:\Dogan\Example\Agackakan\Helpers\bin\Debug\net5.0\YProject.Helpers.pdb
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.csproj.AssemblyReference.cache
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.AssemblyInfoInputs.cache
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.AssemblyInfo.cs
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.csproj.CoreCompileInputs.cache
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.dll
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\refint\YProject.Helpers.dll
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\YProject.Helpers.pdb
+D:\Dogan\Example\Agackakan\Helpers\obj\Debug\net5.0\ref\YProject.Helpers.dll

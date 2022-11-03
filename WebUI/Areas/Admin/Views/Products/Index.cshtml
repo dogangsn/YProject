@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Ürün Yönetimi";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header page-header-light">
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a href="/admin/admin/index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Anasayfa</a>
+                <span class="breadcrumb-item active">Ürün Yönetimi</span>
+            </div>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header row">
+                    <div class="card-title col text-left"><a href="/admin/products/save" class="btn bg-teal"><i class="fas fa-plus mr-1"></i>Yeni Ürün Ekle</a></div>
+                </div>
+                <div class="card-body">
+                    <table class="table" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Resim</th>
+                                <th>Ürün Adı</th>
+                                <th>Kategori</th>
+                                <th>Renk</th>
+                                <th>Fiyat 1</th>
+                                <th>Fiyat 2</th>
+                                <th>Barkod</th>
+                                <th>Stok</th>
+                                <th>Aktif</th>
+                                <th>Sıra</th>
+                                <th>Anasayfada Göster</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section js
+{
+    <script src="~/views/admin/products/index.js"></script>
+} 

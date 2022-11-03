@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Kategori Yönetimi";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<input type="hidden" value="@Convert.ToInt32(Url.ActionContext.RouteData.Values["id"])" id="txtId" />
+<div class="page-header page-header-light">
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a href="/admin/admin/index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Anasayfa</a>
+                <span class="breadcrumb-item active">Kategori Yönetimi</span>
+            </div>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body m-4">
+                    <div class="form-group row">
+                        <label class="col-form-label col-12 col-lg-2">Kategori Adı</label>
+                        <div class="col-12 col-lg-10">
+                            <input type="text" id="txtCategoryName" maxlength="100" placeholder="Kategori Adı Giriniz" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-12 col-lg-2">Sıra No</label>
+                        <div class="col-12 col-lg-10">
+                            <input type="text" id="txtOrderNumber" class="form-control order" maxlength="2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <a href="/admin/categories/index" class="btn bg-slate btn-sm">
+                        <i class="fas fa-arrow-circle-left"></i>
+                        Listeye Dön
+                    </a>
+                    <button class="btn btn-success btn-sm" id="btnSave">
+                        <i class="fa fa-save"></i>
+                        Kaydet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section js{
+    <script src="~/views/admin/categories/save.js"></script>
+}

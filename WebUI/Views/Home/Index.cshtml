@@ -1,0 +1,103 @@
+﻿@model List<ProductCardDto>
+
+@{ Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Rol Yönetimi"; }
+
+
+
+
+<div class="hero-box-area">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="~/Slider/slider1.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="~/Slider/slider2.jpg">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 35px !important; height: 35px !important;"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="width: 35px !important; height: 35px !important;"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-us-area" style="padding-top:120px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about-us-content_6 text-center">
+                    <h2>Agaçkakan Hobi Atölyesi</h2>
+                    <p>
+                        When you start with a portrait and search for a pure form, a clear volume, through successive eliminations,
+                        you arrive inevitably at the egg. Likewise, starting with the egg and following the same process in reverse,
+                        one finishes with the portrait.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Product Area Start -->
+<div class="product-wrapper section-space--ptb_120">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="section-title text-lg-left text-center mb-20">
+                    <h3 class="section-title">Son Eklenen Ürünler</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content mt-30">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+    <div class="col-6 col-md-4 rounded">
+        <div class="single-product-item text-center">
+            <div class="products-images rounded">
+                <a href="/products/productdetail/@item.ProductId" class="product-thumbnail rounded">
+                    <img src="@item.Image" class="rounded" alt="@item.Name">
+                </a>
+            </div>
+            <div class="product-content rounded">
+                <h6 class="prodect-title" style="min-height:66px"><a href="product-details.html">@item.Name</a></h6>
+                <div class="prodect-price">
+                    @if (item.Price1 != 0 && item.Price2 != 0)
+                    {
+    <h6 style="color:#E74C3C">
+        <del> @item.Price1 ₺ </del>
+    </h6>
+                        <h5> @item.Price2 ₺ </h5> }
+                                        else
+                                        {
+                        <h5> @item.Price2 ₺ </h5>}
+                </div>
+            </div>
+        </div>
+    </div>}
+
+
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="margin-top:120px">
+        <a href="/products/products/" class="btn btn--lg btn--border_1 rounded" style="min-width:350px !important">
+            <i class="fas fa-external-link-alt mr-3"></i>Tümünü Görüntüle
+        </a>
+    </div>
+</div>
+
