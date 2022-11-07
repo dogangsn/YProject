@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3orRS3hwrYEbmO0k2UuFlKAXhWax+TOsEiJDec6CINq1jmO5uoTqDdU+fneWc3OYGwtmZDd58AD/dkGiWU3+PQ==",
+  "dgSpecHash": "PSjhCFKdyoBOU3YMWhB7l02mWJadlWVrY0W2z4/S33d/utxR7Xnt5cLYYU0pji54WhlBLPc7/kScpH0D1/T53Q==",
   "success": true,
-  "projectFilePath": "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj",
+  "projectFilePath": "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DG\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

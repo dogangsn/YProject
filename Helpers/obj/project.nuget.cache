@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T8SrxLbVwCzmYCpcEVpjIrXDMrtW9goMVUmvXqWtQLj5qDuyDmy1jQT7cwrnfZOZemOpG6YWU4ZJ6EyeyQGGPQ==",
+  "dgSpecHash": "aTUZUUVhovylNSRN9VzhYj0YkSDD+MJkswZtJLRiMTwRQJ5Pm0bfpNaXRvlghxRF0UgCr721FXrzUCHP/XKtfA==",
   "success": true,
-  "projectFilePath": "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj",
+  "projectFilePath": "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

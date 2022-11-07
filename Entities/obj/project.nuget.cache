@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4SBOmYbFcCZ/GUYOyke9E9mX5EwrOkN+WuVUBQs333UYCsGz4oVrwcPMsXRWA505Iqd0p/5YUm5PjIvzM+OWnw==",
+  "dgSpecHash": "guewCnNskPR2amOiBzBQxJUCUuhUtysCMQW+JFpxph/80hkVBJXP7pzBIOLgH3TeRHBSJWvL9+SKeawa84Xgeg==",
   "success": true,
-  "projectFilePath": "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj",
+  "projectFilePath": "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DG\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

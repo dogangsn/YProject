@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dogan\\Example\\Agackakan\\WebUI\\YProject.WebUI.csproj": {}
+    "D:\\Dogan\\Project\\YProject\\WebUI\\YProject.WebUI.csproj": {}
   },
   "projects": {
-    "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj": {
+    "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj",
+        "projectUniqueName": "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj",
         "projectName": "YProject.DataAccess",
-        "projectPath": "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj",
+        "projectPath": "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj",
         "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
-        "outputPath": "D:\\Dogan\\Example\\Agackakan\\DataAccess\\obj\\",
+        "outputPath": "D:\\Dogan\\Project\\YProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -40,11 +40,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj": {
-                "projectPath": "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj"
+              "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj"
               },
-              "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj": {
-                "projectPath": "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj"
+              "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj": {
+    "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj",
+        "projectUniqueName": "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj",
         "projectName": "YProject.Entities",
-        "projectPath": "D:\\Dogan\\Example\\Agackakan\\Entities\\YProject.Entities.csproj",
+        "projectPath": "D:\\Dogan\\Project\\YProject\\Entities\\YProject.Entities.csproj",
         "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
-        "outputPath": "D:\\Dogan\\Example\\Agackakan\\Entities\\obj\\",
+        "outputPath": "D:\\Dogan\\Project\\YProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -131,8 +131,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj": {
-                "projectPath": "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj"
+              "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj"
               }
             }
           }
@@ -175,14 +175,14 @@
         }
       }
     },
-    "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj": {
+    "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj",
+        "projectUniqueName": "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj",
         "projectName": "YProject.Helpers",
-        "projectPath": "D:\\Dogan\\Example\\Agackakan\\Helpers\\YProject.Helpers.csproj",
+        "projectPath": "D:\\Dogan\\Project\\YProject\\Helpers\\YProject.Helpers.csproj",
         "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
-        "outputPath": "D:\\Dogan\\Example\\Agackakan\\Helpers\\obj\\",
+        "outputPath": "D:\\Dogan\\Project\\YProject\\Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -241,14 +241,14 @@
         }
       }
     },
-    "D:\\Dogan\\Example\\Agackakan\\WebUI\\YProject.WebUI.csproj": {
+    "D:\\Dogan\\Project\\YProject\\WebUI\\YProject.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dogan\\Example\\Agackakan\\WebUI\\YProject.WebUI.csproj",
+        "projectUniqueName": "D:\\Dogan\\Project\\YProject\\WebUI\\YProject.WebUI.csproj",
         "projectName": "YProject.WebUI",
-        "projectPath": "D:\\Dogan\\Example\\Agackakan\\WebUI\\YProject.WebUI.csproj",
+        "projectPath": "D:\\Dogan\\Project\\YProject\\WebUI\\YProject.WebUI.csproj",
         "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
-        "outputPath": "D:\\Dogan\\Example\\Agackakan\\WebUI\\obj\\",
+        "outputPath": "D:\\Dogan\\Project\\YProject\\WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -277,8 +277,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj": {
-                "projectPath": "D:\\Dogan\\Example\\Agackakan\\DataAccess\\YProject.DataAccess.csproj"
+              "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\YProject\\DataAccess\\YProject.DataAccess.csproj"
               }
             }
           }
